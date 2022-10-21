@@ -1,0 +1,21 @@
+apiVersion: v1
+entries:
+  i6o-blog:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-10-21T12:26:46.379788477Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - redis
+      version: 17.3.4
+    description: i6o Open Blog application Helm chart for Kubernetes
+    digest: e3130dc7034d8322fb4b1284c94d9c77fd77d3d0156d7dd97f8e08d7877f8d22
+    name: i6o-blog
+    type: application
+    urls:
+    - https://github.com/mikaheim/helm-charts/releases/download/i6o-blog-0.0.1/i6o-blog-0.0.1.tgz
+    version: 0.0.1
+generated: "2022-10-21T12:26:46.379800478Z"
