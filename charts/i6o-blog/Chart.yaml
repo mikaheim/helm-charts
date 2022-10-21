@@ -1,0 +1,18 @@
+apiVersion: v2
+name: i6o-blog
+description: i6o Open Blog application Helm chart for Kubernetes
+type: application
+
+# Change everytime a chart changes
+version: 0.0.1
+
+# Change everity an application changes
+appVersion: "1.0.0"
+
+dependencies:
+  - name: redis
+    version: 17.3.4
+    repository: https://charts.bitnami.com/bitnami
+    condition: redis.enabled
+    tags:
+      - redis
